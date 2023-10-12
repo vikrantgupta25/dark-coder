@@ -1,0 +1,6 @@
+[user]
+        name = Vikrant Gupta
+        email = vikrant.thomso@gmail.com
+
+[core]
+        sshCommand = "ssh -i ~/.ssh/id_rsa"
