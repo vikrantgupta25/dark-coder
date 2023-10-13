@@ -15,7 +15,7 @@ function App() {
         <img src="logo-color.png" alt="VG" className="logo" />
       </div>
       <section className="intro">
-        <div className="flex centerAlign">
+        <div className="flex avatarPlusText">
           <div className="avatar">
             <Avatar
               src="profilePicture.png"
