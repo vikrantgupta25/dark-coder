@@ -2,8 +2,8 @@ import React from "react";
 import MovingQuotes from "./components/MovingQuotes";
 import { Avatar } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import "./App.css";
@@ -23,18 +23,38 @@ function App() {
               sx={{ height: "15em", width: "15em" }}
             />
             <div className=" flex connectWithMe">
-              <LinkedInIcon
-                className="linkedin"
-                sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
-              />
-              <InstagramIcon
-                className="instagram"
-                sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
-              />
-              <MailOutlineIcon
-                className="mail"
-                sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
-              />
+              <a
+                href="https://www.linkedin.com/in/vikrant-gupta-0107a9165/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInIcon
+                  className="linkedin"
+                  sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
+                  color="primary"
+                />
+              </a>
+              <a
+                href="https://twitter.com/basEsehii"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <TwitterIcon
+                  className="instagram"
+                  sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
+                  color="primary"
+                />
+              </a>
+              <a
+                href="https://github.com/Vikrant2520"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHubIcon
+                  className="github"
+                  sx={{ height: "1.3em", width: "1.3em", cursor: "pointer" }}
+                />
+              </a>
             </div>
           </div>
           <div className="flex vertical introText">
