@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  .text {
+    width: 70%;
+    word-spacing: 0.1em;
+    line-height: 1.8;
+  }
+  .author {
+  }
+}

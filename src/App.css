@@ -13,10 +13,6 @@
 .flex {
   display: flex;
 }
-
-.rightHeader {
-}
-
 .vertical {
   flex-direction: column;
   align-self: center;
@@ -26,7 +22,7 @@
 .personalImage {
   width: 22%;
   border-radius: 50%;
-  height: 300px;
+  height: 20em;
 }
 
 .centerAlign {
@@ -34,30 +30,43 @@
 }
 
 .intro {
-  margin-top: 5em;
+  margin: 10em 0;
+
+  .introText {
+    width: 40%;
+  }
+
+  .aboutMeText {
+    word-spacing: 0.2em;
+    line-height: 1.8;
+  }
 }
 
-.education {
-  margin-top: 5em;
-}
-
-.spaceBetween {
-  justify-content: space-between;
-}
-
-.edCard {
-  background-color: lightgray;
+.inspirationalQuotes {
+  background-color: lightcyan;
+  padding: 3em;
+  margin: 5em 0;
+  .inspiringHeading {
+    width: fit-content;
+    margin: 0 auto;
+  }
   border-radius: 1em;
-  padding: 2em;
 }
 
-.projectCard {
-  width: 50%;
-  background-color: lightgray;
-  border-radius: 1em;
-  padding: 2em;
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 2.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
 }
-
-.projectCard + .projectCard {
-  margin-left: 1em;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

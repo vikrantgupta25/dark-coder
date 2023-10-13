@@ -1,59 +1,36 @@
 import React from "react";
 import "./App.css";
+import MovingQuotes from "./components/MovingQuotes";
 
 function App() {
   return (
     <div className="landing">
       <div className="header flex">
-        <h1>Vikrant Gupta</h1>
-        <div className="rightHeader flex">
-          <div>Dummy</div>
-          <div>Dummy</div>
-        </div>
+        <h1 className="typed">Vikrant Gupta</h1>
       </div>
-      <div className="intro">
+      <section className="intro">
         <div className="flex centerAlign">
           <img
             className="personalImage"
             src="profilePicture.png"
             alt="profileImage"
           />
-          <div className="flex vertical">
-            <h2>Hello I am Vikrant Gupta</h2>
-            <div>I am a problem solver</div>
+          <div className="flex vertical introText">
+            <h2>About Me</h2>
+            <p className="aboutMeText">
+              Hi I am Vikrant Gupta, a 22 year old Web developer living in
+              Bengaluru, India. I am a Software Engineer , currently working
+              with awesome folks at Harness. Have a look at my skills or just
+              connect with me on LinkedIn. I am always excited to do business
+              with like minded people, lets discuss over chai.
+            </p>
           </div>
         </div>
-      </div>
-      <div className="education">
-        <h2>Education</h2>
-        <div className="flex spaceBetween">
-          <div className="edCard">
-            <h4>10th Grade</h4>
-            <p>DAV Public School Ludhiana</p>
-          </div>
-          <div className="edCard">
-            <h4>12th Grade</h4>
-            <p>DAV Public School Ludhiana</p>
-          </div>
-          <div className="edCard">
-            <h4>BTech Electrical Engineering</h4>
-            <p>Indian Institute of Technology Roorkee</p>
-          </div>
-        </div>
-      </div>
-      <div className="projects">
-        <h2>Personal Projects</h2>
-        <div className="flex spaceBetween">
-          <div className="projectCard">
-            <h4>Burger Builder</h4>
-            <p>An app that makes custom burger</p>
-          </div>
-          <div className="projectCard">
-            <h4>Yelp Camp</h4>
-            <p>Social media for campgrounds</p>
-          </div>
-        </div>
-      </div>
+      </section>
+      <section className="inspirationalQuotes">
+        <h2 className="inspiringHeading">Inspiring Quotes</h2>
+        <MovingQuotes />
+      </section>
     </div>
   );
 }
