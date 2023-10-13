@@ -58,7 +58,10 @@ function App() {
             </div>
           </div>
           <div className="flex vertical introText">
-            <h2 style={{ marginTop: "0px", letterSpacing: "0.5px" }}>
+            <h2
+              style={{ marginTop: "0px", letterSpacing: "0.5px" }}
+              className="aboutMeHeader"
+            >
               About Me
             </h2>
             <div>

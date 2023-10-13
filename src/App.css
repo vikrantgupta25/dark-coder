@@ -5,9 +5,13 @@
   .avatar {
     margin: 0 auto;
   }
+  .aboutMeHeader {
+    align-self: center;
+  }
   .intro {
+    margin: 5em auto !important;
     .introText {
-      text-align: center !important;
+      margin-top: 3em;
     }
   }
 }
@@ -26,6 +30,9 @@
   justify-content: space-between;
   border-bottom: 1px solid grey;
   align-items: center;
+}
+
+.aboutMeHeader {
 }
 
 .flex {
