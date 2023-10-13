@@ -6,7 +6,11 @@ export default function Quote(props) {
 
   return (
     <div className="container quote">
-      <Avatar alt={author} src={imagePath} />
+      <Avatar
+        alt={author}
+        src={imagePath}
+        sx={{ height: "5em", width: "5em" }}
+      />
       <h4 className="text">
         <i>{quote}</i>
       </h4>

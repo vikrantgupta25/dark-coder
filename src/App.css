@@ -19,12 +19,6 @@
   margin-left: 4ch;
 }
 
-.personalImage {
-  width: 22%;
-  border-radius: 50%;
-  height: 20em;
-}
-
 .centerAlign {
   justify-content: center;
 }
@@ -39,6 +33,20 @@
   .aboutMeText {
     word-spacing: 0.2em;
     line-height: 1.8;
+    margin-top: 0px;
+  }
+  .avatar {
+    flex-direction: column;
+  }
+  .connectWithMe {
+    margin-top: 1em;
+    justify-content: center;
+  }
+  .instagram {
+    margin-left: 0.5em;
+  }
+  .mail {
+    margin-left: 0.5em;
   }
 }
 
