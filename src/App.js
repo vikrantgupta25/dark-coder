@@ -25,15 +25,15 @@ function App() {
             <div className=" flex connectWithMe">
               <LinkedInIcon
                 className="linkedin"
-                sx={{ height: "1.5em", width: "1.5em" }}
+                sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
               />
               <InstagramIcon
                 className="instagram"
-                sx={{ height: "1.5em", width: "1.5em" }}
+                sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
               />
               <MailOutlineIcon
                 className="mail"
-                sx={{ height: "1.5em", width: "1.5em" }}
+                sx={{ height: "1.5em", width: "1.5em", cursor: "pointer" }}
               />
             </div>
           </div>
