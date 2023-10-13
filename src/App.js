@@ -77,7 +77,7 @@ function App() {
         </div>
       </section>
       <section className="inspirationalQuotes">
-        <h2 className="inspiringHeading">Inspiring Quotes</h2>
+        <h2 className="inspiringHeading">Words To Live By</h2>
         <MovingQuotes />
       </section>
       <section>
