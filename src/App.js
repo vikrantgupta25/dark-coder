@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="landing">
       <div className="header flex">
-        <h1 className="typed">Vikrant Gupta</h1>
+        <img src="logo-color.png" alt="VG" className="logo" />
       </div>
       <section className="intro">
         <div className="flex centerAlign">
@@ -63,8 +63,8 @@ function App() {
             </h2>
             <div>
               <p className="aboutMeText">
-                Hi I am Vikrant Gupta, a 22 year old Web developer living in
-                Bengaluru, India. I am a Software Engineer , currently working
+                Hi I am <b>Vikrant Gupta</b>, a 22 year old Web developer living
+                in Bengaluru, India. I am a Software Engineer, currently working
                 with awesome folks at Harness.
               </p>
               <p className="aboutMeText">
