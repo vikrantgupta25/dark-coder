@@ -48,9 +48,13 @@ export default function MovingQuotes() {
 
   return (
     <div className="movingQuotes">
-      <KeyboardArrowLeftIcon onClick={leftIconClickHanlder} />
+      {position !== 0 && (
+        <KeyboardArrowLeftIcon onClick={leftIconClickHanlder} />
+      )}
       <Quote quote={quotes[position]} />
-      <KeyboardArrowRightIcon onClick={rightIconClickHandler} />
+      {position !== quotes.length - 1 && (
+        <KeyboardArrowRightIcon onClick={rightIconClickHandler} />
+      )}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .landing {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   margin: 1em 24em;
 }
 
@@ -57,6 +57,7 @@
   .inspiringHeading {
     width: fit-content;
     margin: 0 auto;
+    letter-spacing: 1px;
   }
   border-radius: 1em;
 }

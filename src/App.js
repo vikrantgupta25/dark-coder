@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
 import MovingQuotes from "./components/MovingQuotes";
 import { Avatar } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import "./App.css";
 
 function App() {
   return (
@@ -18,16 +18,27 @@ function App() {
             <Avatar
               src="profilePicture.png"
               alt="profileImage"
-              sx={{ height: "10em", width: "10em" }}
+              sx={{ height: "15em", width: "15em" }}
             />
             <div className=" flex connectWithMe">
-              <LinkedInIcon className="linkedin" />
-              <InstagramIcon className="instagram" />
-              <MailOutlineIcon className="mail" />
+              <LinkedInIcon
+                className="linkedin"
+                sx={{ height: "1.5em", width: "1.5em" }}
+              />
+              <InstagramIcon
+                className="instagram"
+                sx={{ height: "1.5em", width: "1.5em" }}
+              />
+              <MailOutlineIcon
+                className="mail"
+                sx={{ height: "1.5em", width: "1.5em" }}
+              />
             </div>
           </div>
           <div className="flex vertical introText">
-            <h2 style={{ marginTop: "0px" }}>About Me</h2>
+            <h2 style={{ marginTop: "0px", letterSpacing: "0.5px" }}>
+              About Me
+            </h2>
             <div>
               <p className="aboutMeText">
                 Hi I am Vikrant Gupta, a 22 year old Web developer living in

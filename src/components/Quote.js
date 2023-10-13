@@ -9,7 +9,7 @@ export default function Quote(props) {
       <Avatar
         alt={author}
         src={imagePath}
-        sx={{ height: "5em", width: "5em" }}
+        sx={{ height: "7em", width: "7em" }}
       />
       <h4 className="text">
         <i>{quote}</i>
