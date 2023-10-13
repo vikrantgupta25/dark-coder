@@ -4,6 +4,8 @@ import { Avatar } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 import "./App.css";
 
 function App() {
@@ -57,6 +59,48 @@ function App() {
       <section className="inspirationalQuotes">
         <h2 className="inspiringHeading">Inspiring Quotes</h2>
         <MovingQuotes />
+      </section>
+      <section>
+        <div className="textAlign">
+          <h2 className="contactFormHeading">Chai with me ?</h2>
+          <p>
+            I am always excited to work on some awesome projects, message me and
+            let's discuss over chai.
+          </p>
+        </div>
+
+        <div className="contactForm">
+          <div className="flex">
+            <TextField
+              id="name"
+              label="Name"
+              variant="outlined"
+              sx={{ width: "50%" }}
+            />
+            <TextField
+              id="email"
+              label="Email"
+              variant="outlined"
+              sx={{ width: "50%", marginLeft: "2em" }}
+            />
+          </div>
+          <TextField
+            id="subject"
+            label="Subject"
+            variant="outlined"
+            className="subject"
+          />
+          <TextField
+            id="message"
+            label="Message"
+            multiline
+            rows={4}
+            className="message"
+          />
+          <Button variant="contained" className="submitBtn">
+            Submit
+          </Button>
+        </div>
       </section>
     </div>
   );
