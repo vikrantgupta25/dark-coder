@@ -12,6 +12,7 @@
     margin: 5em auto !important;
     .introText {
       margin-top: 3em;
+      width: 100% !important;
     }
   }
 }
