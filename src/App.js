@@ -6,9 +6,41 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import emailjs from "@emailjs/browser";
 import "./App.css";
 
 function App() {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [subject, setSubject] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+  React.useEffect(() => emailjs.init("KPyeFk4ROOPeg3x1P"), []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const serviceId = "service_k9z3bcv";
+    const templateId = "template_hks30al";
+    try {
+      setLoading(true);
+      await emailjs.send(serviceId, templateId, {
+        from_name: name,
+        to_name: "Vikrant",
+        message: message,
+        subject: subject,
+        reply_to: email,
+      });
+      alert("email successfully sent ");
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
+    }
+  };
   return (
     <div className="landing">
       <div className="header flex">
@@ -98,12 +130,16 @@ function App() {
               id="name"
               label="Name"
               variant="outlined"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               sx={{ width: "50%" }}
             />
             <TextField
               id="email"
               label="Email"
               variant="outlined"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               sx={{ width: "50%", marginLeft: "2em" }}
             />
           </div>
@@ -111,16 +147,25 @@ function App() {
             id="subject"
             label="Subject"
             variant="outlined"
+            onChange={(e) => setSubject(e.target.value)}
+            value={subject}
             className="subject"
           />
           <TextField
             id="message"
             label="Message"
             multiline
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             rows={4}
             className="message"
           />
-          <Button variant="contained" className="submitBtn">
+          <Button
+            variant="contained"
+            className="submitBtn"
+            onClick={handleSubmit}
+            disabled={loading}
+          >
             Submit
           </Button>
         </div>
