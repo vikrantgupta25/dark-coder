@@ -78,7 +78,7 @@ function App() {
                 />
               </a>
               <a
-                href="https://github.com/Vikrant2520"
+                href="https://github.com/vikrantgupta25"
                 target="_blank"
                 rel="noreferrer"
               >
