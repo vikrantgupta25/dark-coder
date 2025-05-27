@@ -19,7 +19,7 @@ body:
       description: Link to the intercom, slack thread or email thread for the support request
     validations:
       required: true
-  - type: checkbox
+  - type: checkboxes
     id: activated
     attributes:
       label: Activated
