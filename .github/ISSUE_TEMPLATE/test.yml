@@ -19,13 +19,13 @@ body:
       description: Link to the intercom, slack thread or email thread for the support request
     validations:
       required: true
-  # - type: checkboxes
-  #   id: activated
-  #   attributes:
-  #     label: Activated
-  #     description: Whether the customer has completed the subscribe event
-  #   validations:
-  #     required: true
+  - type: checkboxes
+    attributes:
+      label: Activated
+      description: Is the license ACTIVATED
+    options:
+      - label: something
+        required: true
   - type: input
     id: logs
     attributes:
