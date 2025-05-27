@@ -23,9 +23,9 @@ body:
     attributes:
       label: Activated
       description: Is the license ACTIVATED
-    options:
-      - label: something
-        required: true
+      options:
+        - label: something
+          required: true
   - type: input
     id: logs
     attributes:
